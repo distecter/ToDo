@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping("/ToDo")
 class ToDoController {
 
-    @GetMapping("/{ToDoId}")
-    fun getTodo(@PathVariable ToDoId: Long) {
+    @GetMapping("/{todoId}")
+    fun getTodo(@PathVariable todoId: Long) {
         TODO()
     }
 
@@ -28,13 +28,13 @@ class ToDoController {
         TODO()
     }
 
-    @PutMapping("/{ToDoId}")
-    fun updateToDo(@PathVariable ToDoId: Long, @RequestBody updateToDoRequest: UpdateToDoRequest){
+    @PutMapping("/{todoId}")
+    fun updateToDo(@PathVariable todoId: Long, @RequestBody updateToDoRequest: UpdateToDoRequest){
         TODO()
     }
 
-    @DeleteMapping("/{ToDoId}")
-    fun deleteToDo(@PathVariable ToDoId: Long) {
+    @DeleteMapping("/{todoId}")
+    fun deleteToDo(@PathVariable todoId: Long) {
         TODO()
     }
 }
